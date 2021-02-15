@@ -9,7 +9,7 @@ module.exports = merge(baseconfig,{
   devtool: 'source-map' ,
   resolve: {
     alias: {
-      'react': path.resolve(__dirname, './node_modules/react/umd/react.development.min.js')
+      'react': path.resolve(__dirname, '../node_modules/react/umd/react.development.js')
     }
   },
   devServer: {

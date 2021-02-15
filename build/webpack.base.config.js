@@ -6,9 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
-  // 判断打包环境
-  // const isProd = Object.is(env.NODE_ENV, 'production');
-  // console.log(isProd);
 
   const glob = require('glob');   // glob包用于匹配文件
   function getEntry(){
@@ -46,15 +43,13 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
     output: {
         publicPath: '',
         path: path.resolve(__dirname,'../dist'),
-        filename: './js/[name].[chunkhash:8].js'
+        chunkFilename: 'chunk-[id].js',
+        filename: './js/[name].[chunkhash:8].js',
     },
     resolve: {
       alias: {
         '@assets': path.resolve(__dirname,'../src/assets/'),
-      },
-      modules: ['./node_modules'],
-      extensions: ['js'],
-      noParse: [/react\.\w+\.min\.js$/],
+      }
     },
     module: {
       rules: [
@@ -93,13 +88,14 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
             }
           }
         }
-      ]
+      ],
+      // noParse: [/react\.\w+\.min\.js$/],
     },
     plugins: [
       new CleanWebpackPlugin(),
-      // new webpack.DefinePlugin({
-      //   'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-      // }),
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      }),
       // new HtmlWebpackPlugin({
       //   filename: 'index.html',
       //   template: './src/pages/index/index.html',

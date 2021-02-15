@@ -23,3 +23,4 @@ new Promise(function(resolve){
 }).then(function(res){
   console.log(res);
 })
+
