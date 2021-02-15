@@ -1,0 +1,44 @@
+.test-css{
+  color: red;
+}
+
+.hot-p{
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background-color: pink;
+}
+
+.file-loader{
+  width: 100px;
+  height: 30px;
+  border: 1px solid pink;
+  background-image: url('@assets/images/webpack.png');
+  background-size: contain;
+}
+
+
+.postcss{
+  display: flex;
+  opacity: .99;
+}
+
+/*css字体样式*/
+@font-face {font-family: "iconfont";
+  src: url('@assets/font/iconfont.eot?t=1565167255492'); /* IE9 */
+  src: url('@assets/font/iconfont.eot?t=1565167255492#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALwAAsAAAAABpAAAAKiAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBHIE5ATYCJAMICwYABCAFhG0HMBvfBciusCnDvQgkgkAB2pzbE/9guDFEEK2hs3cXRAXEOtHEPioqLFNZ1bo6GaMrDNtW0f+vTf0XIFSITGOA+UCyWfdkBYAmpjXTkmxAbYetLaARaysHDmobIFjWeuH2/nHv9E+gQOY773KZY9KkLsA4kAIda1BkBRJ6w9gFL/A4gUYDcgm71Y2d4KWwxwXi1mwUwavgVxSWqhdqG5YW8ZG7+vQ+vQAfou/HT4bwIqnJ7IqDmyoFSr8ITkZ+rRYNBogACGh1DTLmgEKcNMb3uApGcdUYdzMCjlUafBGqKjCKo+oE++vs4mbQB/nPJPCEj8qaQKE3i8DxpFvI3V1e4nbEk8LHuz8/e97fu97eOjsPZgJuln14CnD+ybfW+vEx2MllW/leF3vL0W5Ld/rlBep29+c7hxNwkqfLza9PnT+se+9vX/M+a0ZeTkn6fb4dtrYj3yoHc/BrRw/BnjFluDUuulKqK4dSgKr8lkvs/Sfv5hyZI4GFv+ubCvisPh9H3qpimBPUn9AR/DjBwJZiiGxDKpqgMZ0scr2hqkaNqGB3p39T1T13aQ31BQGDpE4/ZPXG0ELOQY0ma4Fa9a5VTKNZNXB1ky6MqygNmLEGILR7hqTVG2TtXtFC/oUavf5DrfZwhUZnEbplk4kw+1QwLHKsIGkKmWXqIK6J+8Sl7dg4ZhNZXhRRuzFzmkNIr9GVUzXYgdkSM5zjRgPnBBFG7aganIZtNopURi1Y5hoT52q+Vkua3qSRqR187GAwEYcpEMkUxExGOZCgM+dT+Xw7zGiMjYh1NNXZu2GMk7l/RE9DNwCtkTsGNT3KK07jjAw4jkAIhrJDqsEgzMaGQtTmQRaYjNMwTYiq8mmddmSoXLO90v53u6CRrUnhZGa1L2aRejoAAAA=') format('woff2'),
+  url('@assets/font/iconfont.woff?t=1565167255492') format('woff'),
+  url('@assets/font/iconfont.ttf?t=1565167255492') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('@assets/font/iconfont.svg?t=1565167255492#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconxiaoxi:before {
+  content: "\e601";
+}

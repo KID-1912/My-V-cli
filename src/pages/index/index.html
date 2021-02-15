@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>这是主页</title>
+  </head>
+  <body>
+    <h1>基本配置</h1>
+    <h4>1. 测试html-webpack-plugin、css模块loader</h4>
+    <p class="test-css">当这段文字为粉色，即assets/css下index.css模块打包成功</p>
+    <hr>
+
+    <h4>2. 测试devServer的热更新</h4>
+    <button class="hot-button" type="button">点我添加元素</button>
+    <div class="hot-content"></div>
+    <hr>
+
+    <h4>3. 测试file-loader/url-loader</h4>
+    <p>img标签引入使用 图片<img src="~@assets/images/webpack.png"/></p>
+    <p>css背景图属性使用图片<div class="file-loader"></div></p>
+    <p>js操作中使用图片<button class="button-loader" type="button">请求图片</button>
+    </p>
+
+    <p>字体文件 <i class="iconfont iconxiaoxi"></i></p>
+    <hr>
+
+    <h4>4. 测试sass模块加载</h4>
+    <p class="sass-loader">当这段文字为灰色，即index.sass模块打包成功</p>
+    <hr>
+
+    <h4>5. 测试postcss工具</h4>
+    <p class="postcss">查看PostCss的autoprefixer插件是否为页面的css添加前缀</p>
+
+
+    <h4>5. 测试环境是否支持多页面应用</h4>
+    <p><a href="./pages/reactPage.html"> 跳转值至react应用</a></p>
+    <p><a href="./pages/vuePage.html"> 跳转值至vue应用</a></p>
+  </body>
+</html>
